@@ -3,7 +3,6 @@ package parsera
 import (
 	"regexp"
 	"spider/crawler/engine"
-	"strings"
 )
 
 func ParseBrand(contents []byte) engine.ParseResult {
@@ -17,9 +16,9 @@ func ParseBrand(contents []byte) engine.ParseResult {
 		if i < 2 {
 			continue
 		}
-		brandname := strings.Replace(string(m[2]), " ", "", -1)
+		//brandname := strings.Replace(string(m[2]), " ", "", -1)
 		//fmt.Printf("city : %s , url : %s\n",brandname,m[1])
-		result.Items = append(result.Items, "Brand :"+brandname)
+		//result.Items = append(result.Items, "Brand :"+brandname)
 		result.Requests = append(result.Requests, engine.Request{"https://newcar.xcar.com.cn" + string(m[1]), ParseCar})
 	}
 	return result

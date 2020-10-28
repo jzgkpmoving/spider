@@ -5,7 +5,23 @@ import (
 	"spider/crawler/fetcher"
 )
 
-func Run(seeds ...Request) {
+type SimpleEngine struct {
+}
+
+func worker(r Request) (ParseResult, error) {
+	if r.Url == "" {
+		return ParseResult{}, nil
+	}
+	body, err := fetcher.Fetch(r.Url)
+	//log.Printf("%s\n", r.Url)
+	if err != nil {
+		log.Printf("Fetcher:error"+"fetching url %s: %v", r.Url, err)
+		return ParseResult{}, err
+	}
+	return r.ParserFunc(body), nil
+}
+
+func (e SimpleEngine) Run(seeds ...Request) {
 	var requests []Request
 	for _, r := range seeds {
 		requests = append(requests, r)
@@ -23,13 +39,12 @@ func Run(seeds ...Request) {
 			continue
 		}
 		exist[r.Url] = true
-		body, err := fetcher.Fetch(r.Url)
-		log.Printf("%s\n", r.Url)
+
+		parseResult1, err := worker(r)
 		if err != nil {
 			log.Printf("Fetcher:error"+"fetching url %s: %v", r.Url, err)
 			continue
 		}
-		parseResult1 := r.ParserFunc(body)
 		requests = append(requests, parseResult1.Requests...)
 		for _, item := range parseResult1.Items {
 			log.Printf("Got item %v", item)

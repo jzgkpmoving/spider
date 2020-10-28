@@ -10,6 +10,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"time"
 )
 
 func determineEncoding(r *bufio.Reader) encoding.Encoding {
@@ -22,7 +23,10 @@ func determineEncoding(r *bufio.Reader) encoding.Encoding {
 	return e
 }
 
+var rateLimit = time.Tick(10 * time.Millisecond)
+
 func Fetch(url string) ([]byte, error) {
+	<-rateLimit
 	res, err := http.NewRequest(http.MethodGet, url, nil)
 	res.Header.Add("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36")
 

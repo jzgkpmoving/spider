@@ -2,31 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5c5344a-7bd1-4e73-8ad4-259da77873c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crawler/29C3C4A2AD25CEF70F878381296B1910.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/aika/parsera/brand.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/aika/parsera/cailist.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/aika/parsera/car.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/aika/parsera/cartype.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/engine/engine.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/engine/types.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/fetcher/fetcher.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/zhenai/parser/city.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/zhenai/parser/citylist.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/zhenai/parser/citylist_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/gin/pkg/mod/github.com/!unknwon/com@v1.0.1/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/gin/pkg/mod/github.com/codegangsta/cli@v1.22.4/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/gin/pkg/mod/golang.org/x/net@v0.0.0-20200822124328-c89045814202/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/gin/pkg/mod/golang.org/x/net@v0.0.0-20201022231255-08b38378de70/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/gin/pkg/mod/golang.org/x/text@v0.3.3/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/regex/regex.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler/engine/concurrent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler/scheduler/Simple.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler/scheduler/queued.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/gin/pkg/mod/cache/download/golang.org/x/net/@v/list" beforeDir="false" afterPath="$PROJECT_DIR$/http/gin/pkg/mod/cache/download/golang.org/x/net/@v/list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/gin/pkg/mod/cache/download/golang.org/x/sys/@v/list" beforeDir="false" afterPath="$PROJECT_DIR$/http/gin/pkg/mod/cache/download/golang.org/x/sys/@v/list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/gin/pkg/mod/cache/download/golang.org/x/text/@v/list" beforeDir="false" afterPath="$PROJECT_DIR$/http/gin/pkg/mod/cache/download/golang.org/x/text/@v/list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/gin/pkg/sumdb/sum.golang.org/latest" beforeDir="false" afterPath="$PROJECT_DIR$/http/gin/pkg/sumdb/sum.golang.org/latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/aika/parsera/brand.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/aika/parsera/brand.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/aika/parsera/cailist.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/aika/parsera/cailist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/aika/parsera/cartype.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/aika/parsera/cartype.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/engine/engine.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/engine/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/fetcher/fetcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/fetcher/fetcher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +129,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="single" />
+    <option name="LAST_COMMIT_MESSAGE" value="single" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -154,42 +140,43 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1496" y="202" width="1071" height="772" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603351147810" />
-    <state x="-1353" y="124" key="CommitChangelistDialog2" timestamp="1603356099816">
+    <state x="-1353" y="124" key="CommitChangelistDialog2" timestamp="1603800117218">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="-1353" y="124" key="CommitChangelistDialog2/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603800117218" />
     <state x="-1353" y="124" key="CommitChangelistDialog2/0.23.1393.877/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603356099816" />
-    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1603799853524">
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1603851907365">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603799853524" />
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603851907365" />
     <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.23.1393.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603444749607" />
     <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.23.1440.877/-3000.-436.1080.1897/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603782384549" />
-    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1603799853522">
+    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1603851907364">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.center/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603799853522" />
+    <state width="1878" height="305" key="GridCell.Tab.0.center/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603851907364" />
     <state width="1878" height="305" key="GridCell.Tab.0.center/0.23.1393.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603444749602" />
     <state width="1878" height="305" key="GridCell.Tab.0.center/0.23.1440.877/-3000.-436.1080.1897/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603782384548" />
-    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1603799853522">
+    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1603851907363">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.left/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603799853522" />
+    <state width="1878" height="305" key="GridCell.Tab.0.left/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603851907363" />
     <state width="1878" height="305" key="GridCell.Tab.0.left/0.23.1393.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603444749601" />
     <state width="1878" height="305" key="GridCell.Tab.0.left/0.23.1440.877/-3000.-436.1080.1897/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603782384546" />
-    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1603799853523">
+    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1603851907365">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.right/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603799853523" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603851907365" />
     <state width="1878" height="305" key="GridCell.Tab.0.right/0.23.1393.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603444749603" />
     <state width="1878" height="305" key="GridCell.Tab.0.right/0.23.1440.877/-3000.-436.1080.1897/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603782384548" />
     <state x="-1451" y="179" key="SettingsEditor" timestamp="1603351190225">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1451" y="179" key="SettingsEditor/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603351190225" />
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1603356147359">
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1603800122971">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603356147359" />
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603800122971" />
     <state x="-1820" y="100" width="1720" height="880" key="dock-window-1" timestamp="1603420895238">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
