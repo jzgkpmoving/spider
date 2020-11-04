@@ -5,7 +5,7 @@ import (
 	"spider/crawler/engine"
 )
 
-func ParseCar(contents []byte) engine.ParseResult {
+func ParseCar(contents []byte, url string) engine.ParseResult {
 	rex := regexp.MustCompile(`href="(/[0-9]+/)[^>]+>([^<]+)</a>`)
 	all := rex.FindAllSubmatch(contents, -1)
 
