@@ -2,12 +2,29 @@ package engine
 
 import (
 	"log"
+	"spider/crawler/fetcher"
 )
 
 type ConcurrentEngine struct {
-	Scheduler   Schduler
-	WorkerCount int
-	ItemSaver   chan Item
+	Scheduler        Schduler
+	WorkerCount      int
+	ItemSaver        chan Item
+	RequestProcessor Processor
+}
+
+type Processor func(Request) (ParseResult, error)
+
+func Worker(r Request) (ParseResult, error) {
+	if r.Url == "" {
+		return ParseResult{}, nil
+	}
+	body, err := fetcher.Fetch(r.Url)
+	//log.Printf("%s\n", r.Url)
+	if err != nil {
+		log.Printf("Fetcher:error"+"fetching url %s: %v", r.Url, err)
+		return ParseResult{}, err
+	}
+	return r.Parser.Parse(body, r.Url), nil
 }
 
 type Schduler interface {
@@ -21,12 +38,12 @@ type ReadyNotifier interface {
 	WorkerReady(chan Request)
 }
 
-func createWorker(in chan Request, out chan ParseResult, ready ReadyNotifier) {
+func (e *ConcurrentEngine) createWorker(in chan Request, out chan ParseResult, ready ReadyNotifier) {
 	go func() {
 		for {
 			ready.WorkerReady(in)
 			request := <-in
-			result, err := worker(request)
+			result, err := e.RequestProcessor(request)
 			if err != nil {
 				continue
 			}
@@ -54,7 +71,7 @@ func (e *ConcurrentEngine) Run(seeds ...Request) {
 	e.Scheduler.Run()
 
 	for i := 0; i < e.WorkerCount; i++ {
-		createWorker(e.Scheduler.WorkerChan(), out, e.Scheduler)
+		e.createWorker(e.Scheduler.WorkerChan(), out, e.Scheduler)
 	}
 	for _, r := range seeds {
 		if isDuplicate(r.Url) {

@@ -2,23 +2,9 @@ package engine
 
 import (
 	"log"
-	"spider/crawler/fetcher"
 )
 
 type SimpleEngine struct {
-}
-
-func worker(r Request) (ParseResult, error) {
-	if r.Url == "" {
-		return ParseResult{}, nil
-	}
-	body, err := fetcher.Fetch(r.Url)
-	//log.Printf("%s\n", r.Url)
-	if err != nil {
-		log.Printf("Fetcher:error"+"fetching url %s: %v", r.Url, err)
-		return ParseResult{}, err
-	}
-	return r.ParserFunc(body, r.Url), nil
 }
 
 func (e SimpleEngine) Run(seeds ...Request) {
@@ -40,7 +26,7 @@ func (e SimpleEngine) Run(seeds ...Request) {
 		}
 		exist[r.Url] = true
 
-		parseResult1, err := worker(r)
+		parseResult1, err := Worker(r)
 		if err != nil {
 			log.Printf("Fetcher:error"+"fetching url %s: %v", r.Url, err)
 			continue

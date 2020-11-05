@@ -19,7 +19,7 @@ func ParseBrand(contents []byte, url string) engine.ParseResult {
 		//brandname := strings.Replace(string(m[2]), " ", "", -1)
 		//fmt.Printf("city : %s , url : %s\n",brandname,m[1])
 		//result.Items = append(result.Items, "Brand :"+brandname)
-		result.Requests = append(result.Requests, engine.Request{"https://newcar.xcar.com.cn" + string(m[1]), ParseCar})
+		result.Requests = append(result.Requests, engine.Request{"https://newcar.xcar.com.cn" + string(m[1]), engine.NewFuncParser(ParseCar, "ParseCar")})
 	}
 	return result
 }

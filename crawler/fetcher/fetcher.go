@@ -10,6 +10,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"spider/crawler_distribute/config"
 	"time"
 )
 
@@ -23,7 +24,7 @@ func determineEncoding(r *bufio.Reader) encoding.Encoding {
 	return e
 }
 
-var rateLimit = time.Tick(10 * time.Millisecond)
+var rateLimit = time.Tick(time.Second / config.Qps)
 
 func Fetch(url string) ([]byte, error) {
 	<-rateLimit

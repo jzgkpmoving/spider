@@ -25,7 +25,7 @@ func TestItemSaver(t *testing.T) {
 		},
 	}
 
-	err := save(profile)
+	err := Save(profile)
 	if err != nil {
 		panic(err)
 	}

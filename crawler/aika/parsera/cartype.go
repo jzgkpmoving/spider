@@ -14,7 +14,7 @@ func ParseCarType(contents []byte, url string) engine.ParseResult {
 		//brandname := strings.Replace(string(m[2]), " ", "", -1)
 
 		//result.Items = append(result.Items, "Type :"+brandname)
-		result.Requests = append(result.Requests, engine.Request{"http:" + string(m[1]), ParseBrand})
+		result.Requests = append(result.Requests, engine.Request{"http:" + string(m[1]), engine.NewFuncParser(ParseBrand, "ParseBrand")})
 	}
 	return result
 }

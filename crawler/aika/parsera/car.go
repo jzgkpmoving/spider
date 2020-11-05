@@ -86,6 +86,6 @@ func ParseCarInfo(contents []byte, url string) engine.ParseResult {
 	id := idUrlRe.FindAllSubmatch([]byte(url), -1)
 	withUrlCar.Id = string(id[0][1])
 	result.Items = append(result.Items, withUrlCar)
-	result.Requests = append(result.Requests, engine.Request{"", engine.NilParser})
+	result.Requests = append(result.Requests, engine.Request{"", engine.NewFuncParser(nil, "NilParser")})
 	return result
 }

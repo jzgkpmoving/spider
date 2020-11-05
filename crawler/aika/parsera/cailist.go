@@ -15,7 +15,7 @@ func ParseCar(contents []byte, url string) engine.ParseResult {
 		//brandname := strings.Replace(string(m[2]), " ", "", -1)
 		//fmt.Printf("city : %s , url : %s\n",brandname,m[1])
 		//result.Items = append(result.Items, "Carname :"+brandname)
-		result.Requests = append(result.Requests, engine.Request{"https://newcar.xcar.com.cn" + string(m[1]), ParseCarInfo})
+		result.Requests = append(result.Requests, engine.Request{"https://newcar.xcar.com.cn" + string(m[1]), engine.NewFuncParser(ParseCarInfo, "ParseCarInfo")})
 	}
 
 	rexnextpage := regexp.MustCompile(`href="(//newcar.xcar.com.cn/car/[0-9-]+/)"`)

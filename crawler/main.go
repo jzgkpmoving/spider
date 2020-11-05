@@ -12,6 +12,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	e := engine.ConcurrentEngine{Scheduler: &scheduler.QueuedScheduler{}, WorkerCount: 100, ItemSaver: item}
-	e.Run(engine.Request{"https://www.xcar.com.cn/", parsera.ParseCarType})
+	e := engine.ConcurrentEngine{Scheduler: &scheduler.QueuedScheduler{}, WorkerCount: 100, ItemSaver: item, RequestProcessor: engine.Worker}
+	e.Run(engine.Request{Url: "https://www.xcar.com.cn/", Parser: engine.NewFuncParser(parsera.ParseCarType, "ParseCarType")})
 }
