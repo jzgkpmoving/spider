@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5c5344a-7bd1-4e73-8ad4-259da77873c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/persiser/client/itemsaver.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/persiser/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/persiser/server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/rpcsupport/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/worker/client/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/worker/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/worker/server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distribute/worker/worker.go" afterDir="false" />
+    <list default="true" id="c5c5344a-7bd1-4e73-8ad4-259da77873c4" name="Default Changelist" comment="distribute">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/aika/parsera/brand.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/aika/parsera/brand.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/aika/parsera/cailist.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/aika/parsera/cailist.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/aika/parsera/car.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/aika/parsera/car.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/aika/parsera/cartype.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/aika/parsera/cartype.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/engine/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/engine/concurrent.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/engine/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/engine/simple.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/engine/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/engine/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/fetcher/fetcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/fetcher/fetcher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/persiser/itemsaver.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/persiser/itemsaver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/persiser/itemsaver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/persiser/itemsaver_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -971,6 +968,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
@@ -978,7 +987,8 @@
     <MESSAGE value="Concurrent" />
     <MESSAGE value="fronted finished" />
     <MESSAGE value="flush" />
-    <option name="LAST_COMMIT_MESSAGE" value="flush" />
+    <MESSAGE value="distribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="distribute" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -988,36 +998,36 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1496" y="202" width="1071" height="772" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603351147810" />
-    <state x="-1449" y="128" key="CommitChangelistDialog2" timestamp="1604476672680">
+    <state x="-1585" y="169" width="775" height="473" key="CommitChangelistDialog2" timestamp="1604572207795">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1449" y="128" key="CommitChangelistDialog2/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604476672680" />
+    <state x="-1585" y="169" width="775" height="473" key="CommitChangelistDialog2/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604572207795" />
     <state x="-1353" y="124" key="CommitChangelistDialog2/0.23.1393.877/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603356099816" />
-    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1604565927973">
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1604572325602">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604565927973" />
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604572325602" />
     <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.23.1393.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603444749607" />
     <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.23.1395.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604047793705" />
     <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.23.1440.877/-3000.-436.1080.1897/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604481442900" />
-    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1604565927971">
+    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1604572325601">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.center/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604565927971" />
+    <state width="1878" height="305" key="GridCell.Tab.0.center/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604572325601" />
     <state width="1878" height="305" key="GridCell.Tab.0.center/0.23.1393.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603444749602" />
     <state width="1878" height="305" key="GridCell.Tab.0.center/0.23.1395.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604047793704" />
     <state width="1878" height="305" key="GridCell.Tab.0.center/0.23.1440.877/-3000.-436.1080.1897/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604481442899" />
-    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1604565927970">
+    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1604572325601">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.left/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604565927970" />
+    <state width="1878" height="305" key="GridCell.Tab.0.left/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604572325601" />
     <state width="1878" height="305" key="GridCell.Tab.0.left/0.23.1393.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603444749601" />
     <state width="1878" height="305" key="GridCell.Tab.0.left/0.23.1395.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604047793703" />
     <state width="1878" height="305" key="GridCell.Tab.0.left/0.23.1440.877/-3000.-436.1080.1897/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604481442899" />
-    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1604565927972">
+    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1604572325602">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.right/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604565927972" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604572325602" />
     <state width="1878" height="305" key="GridCell.Tab.0.right/0.23.1393.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603444749603" />
     <state width="1878" height="305" key="GridCell.Tab.0.right/0.23.1395.877/-3000.-436.1080.1897/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1604047793704" />
     <state width="1878" height="305" key="GridCell.Tab.0.right/0.23.1440.877/-3000.-436.1080.1897/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604481442900" />
@@ -1033,10 +1043,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1451" y="179" key="SettingsEditor/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603351190225" />
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1604476676030">
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2" timestamp="1604572242156">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604476676030" />
+    <state x="-1360" y="280" key="Vcs.Push.Dialog.v2/0.0.1440.900/-3000.-459.1080.1920/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1604572242156" />
     <state x="-1147" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603954731911">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
